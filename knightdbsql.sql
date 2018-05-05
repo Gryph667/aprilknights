@@ -1,24 +1,28 @@
 CREATE TABLE knight
 (
-pkey int,
-knum char(6),
-rname varchar(30),
-dname varchar(20),
+pkey int NOT NULL,
+knum char(6) NOT NULL,
+rname varchar(30) NOT NULL,
+dname varchar(20) NOT NULL,
 inttrans varchar(64),
 bio varchar(255),
 firstevent tinyint,
-frenemy bit,
+frenemy bit NOT NULL,
 rlimpact varchar(255),
 batt tinyint,
 batt2 tinyint,
 rnk int,
 security tinyint,
-crtsetdt date,
-crtsetid int,
-lstmdby int,
-lstmdts datetime,
-activeflg bit,
-delflg bit
+crtsetdt date NOT NULL,
+crtsetid int NOT NULL,
+lstmdby int NOT NULL,
+lstmdts datetime NOT NULL,
+activeflg bit NOT NULL,
+delflg bit NOT NULL,
+PRIMARY KEY (pkey)
+UNIQUE KEY (knum)
+UNIQUE KEY (rname)
+UNIQUE KEY (dname)
 )
 
 CREATE TABLE skill
