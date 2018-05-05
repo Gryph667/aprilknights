@@ -21,7 +21,7 @@ activeflg bit,
 delflg bit
 )
 
-CREATE TABLE skills
+CREATE TABLE skill
 (
 pkey tinyint,
 skillname varchar(64),
