@@ -33,3 +33,15 @@ VALUES
 (8,'Knights of the Ashen Blade','TBD','','','','','',NOW(),1,1,NOW(),1,0),
 (9,'Scarlet Feather','TBD','','','','','',NOW(),1,1,NOW(),1,0),
 (10,'ANZAC','TBD','','','','','',NOW(),1,1,NOW(),1,0)
+
+
+INSERT INTO `security`(`pkey`, `secname`, `secdescr`, `cvuser`, `cmuser`, `cduser`, `cvskill`, `cmskill`, `cdskill`, `cmsskill`, `cmoskill`, `cvrank`, `cmrank`, `cdrank`, `cvbatt`, `cmbatt`, `cdbatt`, `cvevent`, `cmevent`, `cdevent`, `cvsec`, `cmsec`, `cdsec`, `cmbattuser`, `crtsetdt`, `crtsetid`, `lstmdby`, `lstmdts`, `activeflg`, `delflg`) 
+VALUES 
+(1,'Admin','Full Access Admin',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,NOW(),1,1,NOW(),1,0),
+(2,'Grandmaster','Admin',1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,NOW(),1,1,NOW(),1,0),
+(3,'Councilor','Council Member',1,1,0,1,1,0,1,1,1,0,0,1,1,0,1,0,0,0,0,0,1,NOW(),1,1,NOW(),1,0),
+(4,'Commander','Battalion Commander',1,1,0,1,1,0,1,1,1,0,0,1,1,0,1,0,0,0,0,0,1,NOW(),1,1,NOW(),1,0),
+(5,'Lt','Battalion Second',1,1,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,1,NOW(),1,1,NOW(),1,0),
+(6,'Knight','Knight of the Realm',1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,NOW(),1,1,NOW(),1,0)
+(7,'Initiate','Aspirant to the Blade',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NOW(),1,1,NOW(),1,0)
+(8,'Applicant','Newcomer',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NOW(),1,1,NOW(),1,0)
