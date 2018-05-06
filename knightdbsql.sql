@@ -19,9 +19,9 @@ lstmdby int NOT NULL,
 lstmdts datetime NOT NULL,
 activeflg bit NOT NULL,
 delflg bit NOT NULL,
-PRIMARY KEY (pkey)
-UNIQUE KEY (knum)
-UNIQUE KEY (rname)
+PRIMARY KEY (pkey),
+UNIQUE KEY (knum),
+UNIQUE KEY (rname),
 UNIQUE KEY (dname)
 )
 
@@ -36,7 +36,7 @@ crtsetid int NOT NULL,
 lstmdby int NOT NULL,
 lstmdts datetime NOT NULL,
 activeflg bit NOT NULL,
-delflg bit NOT NULL
+delflg bit NOT NULL,
 PRIMARY KEY (pkey)
 )
 
@@ -46,7 +46,7 @@ pkey tinyint NOT NULL,
 title varchar(30) NOT NULL,
 livedate date NOT NULL,
 enddate date NOT NULL,
-redown varchar(30) NOT NULL
+redown varchar(30) NOT NULL,
 PRIMARY KEY (pkey)
 )
 
@@ -65,7 +65,7 @@ crtsetid int NOT NULL,
 lstmdby int NOT NULL,
 lstmdts datetime NOT NULL,
 activeflg bit NOT NULL,
-delflg bit NOT NULL
+delflg bit NOT NULL,
 PRIMARY KEY (pkey)
 )
 
@@ -81,7 +81,7 @@ crtsetid int NOT NULL,
 lstmdby int NOT NULL,
 lstmdts datetime NOT NULL,
 activeflg bit NOT NULL,
-delflg bit NOT NULL
+delflg bit NOT NULL,
 PRIMARY KEY (pkey)
 )
 
@@ -94,8 +94,8 @@ crtsetdt datetime NOT NULL,
 crtsetid int NOT NULL,
 lstmdby int NOT NULL,
 lstmdts datetime NOT NULL,
-delflg bit NOT NULL
-PRIMARY KEY (pkey)
+delflg bit NOT NULL,
+PRIMARY KEY (usid)
 )
 
 /*
@@ -130,7 +130,7 @@ crtsetid int NOT NULL,
 lstmdby int NOT NULL,
 lstmdts datetime NOT NULL,
 activeflg bit NOT NULL,
-delflg bit NOT NULL
+delflg bit NOT NULL,
 PRIMARY KEY (pkey)
 )
 */
