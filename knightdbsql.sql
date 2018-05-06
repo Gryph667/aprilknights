@@ -27,103 +27,111 @@ UNIQUE KEY (dname)
 
 CREATE TABLE skill
 (
-pkey tinyint,
-skillname varchar(64),
+pkey tinyint NOT NULL,
+skillname varchar(64) NOT NULL,
 skilldescr varchar(255),
-public bit,
-crtsetdt date,
-crtsetid int,  
-lstmdby int,
-lstmdts datetime,
-activeflg bit,
-delflg bit
+public bit NOT NULL,
+crtsetdt date NOT NULL,
+crtsetid int NOT NULL,  
+lstmdby int NOT NULL,
+lstmdts datetime NOT NULL,
+activeflg bit NOT NULL,
+delflg bit NOT NULL
+PRIMARY KEY (pkey)
 )
 
 CREATE TABLE event
 (
-pkey tinyint,
-title varchar(30),
-livedate date,
-enddate date,
-redown varchar(30)
+pkey tinyint NOT NULL,
+title varchar(30) NOT NULL,
+livedate date NOT NULL,
+enddate date NOT NULL,
+redown varchar(30) NOT NULL
+PRIMARY KEY (pkey)
 )
 
 CREATE TABLE battalion
 (
-pkey tinyint,
-name varchar(30),
+pkey tinyint NOT NULL,
+name varchar(30) NOT NULL,
 battdescr varchar(255),
 battlead int,
 battsec1 int,
 battsec2 int,
 color varchar(15),
 motto varchar(64),
-crtsetdt date,
-crtsetid int,
-lstmdby int,
-lstmdts datetime,
-activeflg bit,
-delflg bit
+crtsetdt date NOT NULL,
+crtsetid int NOT NULL,
+lstmdby int NOT NULL,
+lstmdts datetime NOT NULL,
+activeflg bit NOT NULL,
+delflg bit NOT NULL
+PRIMARY KEY (pkey)
 )
 
 CREATE TABLE krank
 (
-pkey tinyint,
-name varchar(20),
+pkey tinyint NOT NULL,
+name varchar(20) NOT NULL,
 rankdescr varchar(255),
-rval tinyint,
-uniqe bit,
-crtsetdt date,
-crtsetid int,
-lstmdby int,
-lstmdts datetime,
-activeflg bit,
-delflg bit
+rval tinyint NOT NULL,
+uniqe bit NOT NULL,
+crtsetdt date NOT NULL,
+crtsetid int NOT NULL,
+lstmdby int NOT NULL,
+lstmdts datetime NOT NULL,
+activeflg bit NOT NULL,
+delflg bit NOT NULL
+PRIMARY KEY (pkey)
 )
 
 CREATE TABLE userskill
 (
-usid int,
-fkeyuser int,
-fkeyskill int,
-crtsetdt datetime,
-crtsetid int,
-lstmdby int,
-lstmdts datetime,
-delflg bit
+usid int NOT NULL,
+fkeyuser int NOT NULL,
+fkeyskill int NOT NULL,
+crtsetdt datetime NOT NULL,
+crtsetid int NOT NULL,
+lstmdby int NOT NULL,
+lstmdts datetime NOT NULL,
+delflg bit NOT NULL
+PRIMARY KEY (pkey)
 )
 
 /*
 CREATE TABLE security
 (
-pkey tinyint,
-secname varchar(30),
+pkey tinyint NOT NULL,
+secname varchar(30) NOT NULL,
 secdescr varchar(255),
-cvuser bit,
-cmuser bit,
-cduser bit,
-cvskill bit,
-cmskill bit,
-cdskill bit,
-cmsskill bit,
-cmoskill bit,
-cvrank bit,
-cmrank bit,
-cdrank bit,
-cvbatt bit,
-cmbatt bit,
-cdbatt bit,
-cvevent bit,
-cmevent bit,
-cdevent bit,
-cvsec bit,
-cmsec bit,
-cdsec bit,
-cmbattuser bit,
-lstmdby int,
-lstmdts datetime,
-activeflg bit,
-delflg bit
+cvuser bit NOT NULL,
+cmuser bit NOT NULL,
+cduser bit NOT NULL,
+cvskill bit NOT NULL,
+cmskill bit NOT NULL,
+cdskill bit NOT NULL,
+cmsskill bit NOT NULL,
+cmoskill bit NOT NULL,
+cvrank bit NOT NULL,
+cmrank bit NOT NULL,
+cdrank bit NOT NULL,
+cvbatt bit NOT NULL,
+cmbatt bit NOT NULL,
+cdbatt bit NOT NULL,
+cvevent bit NOT NULL,
+cmevent bit NOT NULL,
+cdevent bit NOT NULL,
+cvsec bit NOT NULL,
+cmsec bit NOT NULL,
+cdsec bit NOT NULL,
+cmbattuser bit NOT NULL,
+crtsetdt datetime NOT NULL,
+crtsetid int NOT NULL,
+lstmdby int NOT NULL,
+lstmdts datetime NOT NULL,
+activeflg bit NOT NULL,
+delflg bit NOT NULL
+PRIMARY KEY (pkey)
 )
 */
 
