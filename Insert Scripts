@@ -3,7 +3,8 @@ VALUES
 (1,'The Button','2015-04-01','2015-06-05','Powerlanguage'),
 (2,'Robin','2016-04-01','2016-04-08','Powerlanguage'),
 (3,'Place','2017-04-01','2017-04-03','Powerlanguage'),
-(4,'Circle of Trust','2017-04-02','2017-04-06','mjmayank')
+(4,'Circle of Trust','2018-04-02','2018-04-06','mjmayank'),
+(5,'Sequence','2019-04-01','2019-4-3','youngluck')
 
 
 INSERT INTO krank(pkey,name,rankdescr,rval,uniqe,crtsetdt,crtsetid,lstmdby,lstmdts,activeflg,delflg)
@@ -13,17 +14,20 @@ VALUES
 (3,'First Ranger','TBD',3,1,NOW(),1,1,NOW(),1,0),
 (4,'First Builder','TBD',3,1,NOW(),1,1,NOW(),1,0),
 (5,'Council Advisor','TBD',4,0,NOW(),1,1,NOW(),1,0),
-(6,'Necromancer','Head Dev',4,1,NOW(),1,1,NOW(),1,0),
+(6,'Archmage','Head Dev',4,1,NOW(),1,1,NOW(),1,0),
 (7,'Commander','TBD',5,0,NOW(),1,1,NOW(),1,0),
-(8,'Lieutenant','TBD',6,0,NOW(),1,1,NOW(),1,0),
-(9,'Knight','TBD',7,0,NOW(),1,1,NOW(),1,0),
-(10,'Initiate','TBD',20,0,NOW(),1,1,NOW(),1,0),
-(11,'Applicant','TBD',99,0,NOW(),1,1,NOW(),1,0)
+(8,'LtCommander','TBD',6,0,NOW(),1,1,NOW(),1,0),
+(9,'Lieutenant','TBD',7,0,NOW(),1,1,NOW(),1,0),
+(10,'First Sergeant','TBD',8,0,NOW(),1,1,NOW(),1,0),
+(11,'Sergeant','TBD',8,0,NOW(),1,1,NOW(),1,0),
+(12,'Knight','TBD',10,0,NOW(),1,1,NOW(),1,0),
+(13,'Initiate','TBD',20,0,NOW(),1,1,NOW(),1,0),
+(14,'Applicant','TBD',99,0,NOW(),1,1,NOW(),1,0);
 
 
 INSERT INTO battalion(pkey,name,battdescr,battlead,battsec1,battsec2,color,motto,crtsetdt,crtsetid,lstmdby,lstmdts,activeflg,delflg)
 VALUES
-(1,'The Redguard','TBD',1,'','','Red','Redguard Provides',NOW(),1,1,NOW(),1,0),
+(1,'The Redguard','TBD',1,'','','Red','Redguard Provides, Redguard Prevails',NOW(),1,1,NOW(),1,0),
 (2,'Knights of the Church','TBD','','','','','',NOW(),1,1,NOW(),1,0),
 (3,'The Britguard','TBD','','','','','',NOW(),1,1,NOW(),1,0),
 (4,'Gray Wardens','TBD','','','','','',NOW(),1,1,NOW(),1,0),
@@ -42,6 +46,8 @@ VALUES
 (3,'Councilor','Council Member',1,1,0,1,1,0,1,1,1,0,0,1,1,0,1,0,0,0,0,0,1,NOW(),1,1,NOW(),1,0),
 (4,'Commander','Battalion Commander',1,1,0,1,1,0,1,1,1,0,0,1,1,0,1,0,0,0,0,0,1,NOW(),1,1,NOW(),1,0),
 (5,'Lt','Battalion Second',1,1,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,1,NOW(),1,1,NOW(),1,0),
-(6,'Knight','Knight of the Realm',1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,NOW(),1,1,NOW(),1,0)
-(7,'Initiate','Aspirant to the Blade',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NOW(),1,1,NOW(),1,0)
-(8,'Applicant','Newcomer',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NOW(),1,1,NOW(),1,0)
+(6,'First Sergeant','Battalion Second',1,1,0,1,0,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,1,NOW(),1,1,NOW(),1,0),
+(7,'Sergeant','Veteran Knight of the Realm',1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,NOW(),1,1,NOW(),1,0),
+(8,'Knight','Knight of the Realm',1,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,NOW(),1,1,NOW(),1,0),
+(9,'Initiate','Aspirant to the Blade',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NOW(),1,1,NOW(),1,0),
+(50,'Applicant','Newcomer',1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,NOW(),1,1,NOW(),1,0)
